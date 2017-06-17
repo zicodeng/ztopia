@@ -1,0 +1,32 @@
+nav.site-nav {
+	font-weight: bold;
+	font-family: $title-font-family;
+	text-transform: uppercase;
+	text-align: right;
+	@include abs-pos(50%, 50px, auto, auto);
+	@include transform(translateY(-50%));
+
+    li {
+		padding: 15px 0;
+
+		> a {
+			color: white;
+
+			&::after {
+				content: "";
+				background-color: white;
+				height: 2px;
+				width: 40px;
+				display: block;
+				margin: -10px -50px auto auto;
+				opacity: 0;
+				@include abs-pos(auto, 0);
+				@include transition(all 0.3s ease-in-out);
+			}
+
+			&:hover::after, &.active::after {
+				opacity: 1;
+			}
+		}
+    }
+}

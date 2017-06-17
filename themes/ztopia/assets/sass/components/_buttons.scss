@@ -1,0 +1,7 @@
+button,
+button:focus {
+	// Remove border default outline
+	box-shadow: none;
+	-webkit-appearance: none;
+	outline: none;
+}

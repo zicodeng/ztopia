@@ -1,0 +1,16 @@
+html, body {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    color: $body-font-color;
+	overflow-x: hidden;
+	overflow-y: auto;
+	min-height: 100%;
+	@include respond-to($screen-sm) {
+		font-size: 16px;
+	};
+}
+
+p {
+	margin-bottom: $spacing-sm;
+	line-height: 1.2rem;
+}

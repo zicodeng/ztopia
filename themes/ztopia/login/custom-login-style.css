@@ -1,0 +1,87 @@
+body.login {
+	background-color: black;
+}
+
+.login div#login {
+	position: relative;
+}
+
+.login h1 a {
+	background-image: url(none);
+}
+
+.login h1::before {
+	content: "Z";
+	position: absolute;
+	font-family: "ubuntu", sans-serif;
+	font-size: 600px;
+	font-weight: normal;
+	color: #0082E5;
+	left: -200px;
+	top: 250px;
+	z-index: -1;
+}
+
+.login label {
+	font-size: 12px;
+	color: black;
+}
+
+.login input[type="text"] {
+	background-color: #ffffff;
+}
+
+.login input[type="password"] {
+	background-color: #ffffff;
+}
+
+.login input[type="checkbox"] {
+	box-shadow: none;
+	border-color: black;
+}
+
+.login input[type=checkbox]:checked:before {
+	color: #0082E5;
+}
+
+#login form p.forgetmenot {
+	margin-bottom: 15px;
+}
+
+.login .button-primary,
+.login .button-primary:active {
+	width: 100%;
+	background-color: white;
+	border: 1px solid #0082E5;
+	box-shadow: none;
+	text-shadow: none;
+	color: #0082E5;
+	border-radius: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.login .button-primary:hover {
+	background-color: #0082E5;
+	color: white;
+	border-color: #0082E5;
+}
+
+.login #login_error,
+.login .message {
+	border-left: none;
+	border-right: 5px solid #0082E5;
+}
+
+.login #login_error a {
+	color: #0082E5;
+}
+
+.login #nav a,
+.login p#backtoblog a {
+	color: white;
+}
+
+.login #nav:hover a,
+.login p#backtoblog:hover a {
+	color: #0082E5;
+}

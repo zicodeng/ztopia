@@ -1,0 +1,69 @@
+aside.sidebar {
+    height: 100%;
+	width: 100%;
+	background-color: white;
+    position: fixed;
+	left: -70%;
+	@include transition(all 0.5s ease-in-out);
+	@include respond-to($screen-md) {
+		left: -100%;
+	};
+}
+
+aside.sidebar.active {
+	left: 0;
+	@include respond-to($screen-md) {
+		// Always hide if scren size is less than tablet
+		display: none;
+	};
+}
+
+.blog-info-container {
+	height: 100%;
+	width: 50%;
+	background-color: black;
+	color: white;
+	z-index: -1;
+	@include transition(all 0.5s ease-in-out);
+	@include abs-pos(auto, 0, auto, auto);
+	@include transform(none);
+
+	> h1 {
+		opacity: 0;
+		font-size: 6rem;
+		@include transition(all 0.5s ease-in-out);
+		@include abs-pos(40%, auto, auto, -250px);
+
+		.first-name {
+			color: black;
+
+			&::before {
+				content: "";
+				height: 5px;
+				width: 600px;
+				display: block;
+				background-color: black;
+				@include abs-pos(-10px, auto, auto, -300px);
+			}
+		}
+
+		.last-name {
+			&::after {
+				content: '"I aim to save people from the overwhelming tsunami of information"';
+				width: 800px;
+				font-size: $body-font-size;
+				font-weight: normal;
+				display: block;
+				@include abs-pos(auto, auto, -25px, 270px);
+			}
+		}
+	}
+}
+
+.blog-info-container.active {
+	@include abs-pos(auto, 25%, auto, auto);
+
+	> h1 {
+		opacity: 1;
+	}
+}

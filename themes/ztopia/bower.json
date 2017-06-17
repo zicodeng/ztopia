@@ -1,0 +1,23 @@
+{
+  "name": "ztopia",
+  "authors": [
+    "Zico Deng <zicodeng@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ubuntu": "https://google-fonts.azurewebsites.net/googleFonts/ubuntu?family=Ubuntu",
+    "roboto": "https://google-fonts.azurewebsites.net/googleFonts/roboto?family=Roboto",
+    "bootstrap": "v4.0.0-alpha.6",
+    "components-font-awesome": "^4.7.0"
+  }
+}

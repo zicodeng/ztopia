@@ -1,0 +1,126 @@
+/******************************************************
+
+Dashboard Style
+
+******************************************************/
+#poststuff .stuffbox h3,
+#poststuff h2,
+#poststuff h3.hndle {
+	background-color: #0073aa;
+	color: white;
+}
+
+.js .postbox .handlediv .toggle-indicator:before {
+	color: white;
+}
+
+.input-field {
+	padding: 10px;
+}
+
+.input-field input,
+.input-field select {
+	width: 100%;
+}
+
+.input-field > label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.slide-info-container {
+	margin: 25px 8px 12px 8px;
+}
+
+.slide-info-container h2 {
+	background-color: #F6546A !important;
+	border: 1px solid #F6546A !important;
+	position: relative;
+}
+
+.slide-info-container h2 span.toggle-indicator {
+	float: right;
+	cursor: pointer;
+}
+
+.slide-info-container h2 span.toggle-indicator.active::before {
+	transform: rotate(180deg);
+}
+
+.slide-info-container .input-container {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 12px 12px 18px 12px;
+}
+
+.slide-info-container .input-container .input-field.image {
+	box-sizing: border-box;
+	width: 24.7%;
+	text-align: center;
+	display: inline-block;
+}
+
+@media (max-width: 1460px) {
+	.slide-info-container .input-container .input-field.image {
+		width: 24.5%;
+	}
+}
+
+@media (max-width: 1110px) {
+	.slide-info-container .input-container .input-field.image {
+		width: 49.5%;
+	}
+}
+
+@media (max-width: 998px) {
+	.slide-info-container .input-container .input-field.image {
+		width: 100%;
+	}
+}
+
+.slide-info-container .input-container .input-field.image label {
+	background-color: #20B2AA;
+	color: white;
+	margin: 0;
+	padding: 8px 12px;
+}
+
+.slide-info-container .input-container .input-field.image .image-preview {
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slide-info-container .input-container .input-field.image input {
+	display: none;
+}
+
+.slide-info-container .input-container .input-field.image button {
+	width: 50%;
+	background-color: white;
+	border: 1px solid #20B2AA;
+	color: #20B2AA;
+	padding: 8px 12px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	float: left;
+}
+
+.slide-info-container .input-container .input-field.image button:hover {
+	background-color: #20B2AA;
+	color: white;
+}
+
+.slide-info-container .input-container .input-field.image .meta-box-image-remove-btn {
+	border: 1px solid #d54e21;
+	color: #d54e21;
+}
+
+.slide-info-container .input-container .input-field.image .meta-box-image-remove-btn:hover {
+	background-color: #d54e21;
+	color: white;
+}

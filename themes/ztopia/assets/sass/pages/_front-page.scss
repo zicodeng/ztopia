@@ -1,0 +1,401 @@
+section.home {
+	background-color: $primary-color;
+	padding: 350px 0 300px 0;
+	@include respond-to($screen-sm) {
+		padding: 200px 0;
+	};
+
+	> .logo {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		position: relative;
+
+		> .logo-frame {
+			padding: $spacing-md;
+			margin: 0 auto;
+			border: 5px solid $accent-color;
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			margin-left: -100px;
+			@include match-container-size();
+			@include animation(rotate-clockwise 4s ease 0s infinite);
+
+			&:nth-child(2) {
+				margin-left: -205px;
+				border: 5px solid white;
+				@include animation(rotate-counter-clockwise 4s ease 0s infinite);
+			}
+		}
+
+		> h1 {
+			font-size: 6rem;
+			color: white;
+			text-align: center;
+			@include abs-pos(50%, auto, auto, 50%);
+			@include transform(translate(-50%, -50%));
+		}
+	}
+}
+
+section.about {
+	padding: $spacing-xl $spacing-xl 120px $spacing-xl;
+	@include respond-to($screen-lg) {
+		padding: $spacing-xl;
+	};
+	@include respond-to($screen-md) {
+		padding-bottom: 100px;
+	};
+	@include respond-to($screen-sm) {
+		padding: $spacing-lg $spacing-lg $spacing-xl $spacing-lg;
+	};
+
+	article {
+
+		h1 {
+			color: $accent-color;
+		}
+
+		.about-subtitle {
+			text-transform: uppercase;
+			margin-bottom: $spacing-lg;
+		}
+
+		.profile-picture {
+			position: relative;
+			@include respond-to($screen-md) {
+				margin-top: $spacing-md;
+			};
+
+			> .picture-frame {
+				border: 5px solid $accent-color;
+				@include abs-pos(50px, auto, auto, 50px);
+				@include match-container-size(90%);
+				@include respond-to($screen-sm) {
+					@include abs-pos(40px, auto, auto, 40px);
+				};
+			}
+
+			> img {
+				position: relative;
+				border: 5px solid black;
+				@include match-container-size(90%);
+			}
+		}
+	}
+}
+
+section.education {
+	background-color: $primary-color;
+	padding: $spacing-xl 0;
+	overflow: hidden;
+	color: white;
+
+	article {
+		.institute-picture {
+			width: 100%;
+			height: 200px;
+			margin-left: -15px;
+
+			> p {
+				@include transform(rotate(90deg));
+				@include respond-to($screen-sm) {
+					@include transform(translateX(-50%));
+				};
+			}
+		}
+
+		.institute-thumbnail {
+			height: 200px;
+			width: 200px;
+			border: 5px solid white;
+			position: absolute;
+			z-index: 1;
+			@include respond-to($screen-sm) {
+				@include abs-pos(auto, auto, auto, 50%);
+				@include transform(translateX(-50%));
+			};
+
+			> img {
+				@include match-container-size;
+			}
+		}
+
+		.thumbnail-stripe {
+			width: 100%;
+			height: 100px;
+			background-color: $accent-color;
+			@include abs-pos(115px);
+			@include respond-to($screen-sm) {
+				top: 50%;
+				@include transform(translateY(-50%));
+			};
+		}
+
+		.education-content {
+			padding: $spacing-lg;
+			@include respond-to($screen-sm) {
+				text-align: center;
+			};
+
+			> h4 {
+				color: $accent-color;
+				margin-bottom: $spacing-md;
+			}
+		}
+
+		&:nth-child(odd) {
+			margin-bottom: $spacing-xl;
+
+			.institute-picture {
+				> p {
+					@include abs-pos(35px, 190px);
+					@include respond-to($screen-sm) {
+						@include abs-pos(-35px, auto, auto, 50%);
+					};
+				}
+			}
+
+			.institute-thumbnail {
+				right: 15px;
+			}
+		}
+
+		&:nth-child(even) {
+			@include respond-to($screen-sm) {
+				display: none;
+			};
+
+			.institute-picture {
+				> p {
+					@include abs-pos(35px, auto, auto, 190px);
+					@include respond-to($screen-sm) {
+						@include abs-pos(-35px, auto, auto, 50%);
+					};
+				}
+			}
+
+			.institute-thumbnail {
+				left: 15px;
+				@include respond-to($screen-sm) {
+					@include abs-pos(auto, auto, auto, 50%);
+					@include transform(translateX(-50%));
+				};
+			}
+
+			.education-content {
+				text-align: right;
+				@include respond-to($screen-sm) {
+					text-align: center;
+				};
+			}
+		}
+    }
+
+	article.education-mobile {
+		display: none;
+		margin-bottom: -80px;
+		@include respond-to($screen-sm) {
+			display: block;
+		};
+	}
+}
+
+section.experience {
+	padding: $spacing-lg 0;
+	@include respond-to($screen-sm) {
+		padding: $spacing-sm 0;
+	};
+	article {
+        width: 80%;
+		height: 300px;
+		margin: $spacing-lg auto;
+		position: relative;
+		overflow: hidden;
+		@include bg-img();
+		@include respond-to($screen-sm) {
+			width: 90%;
+		};
+
+		.experience-content {
+			padding: $spacing-md $spacing-lg;
+			margin-top: 235px;
+			color: white;
+			background-color: rgba(0, 130, 229, 0.8);
+			cursor: pointer;
+			@include match-container-size();
+			@include transition($transition);
+
+			&:hover {
+				margin-top: 0;
+				@include respond-to($screen-md) {
+					margin-top: 235px;
+				};
+			}
+
+			> h4 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+    }
+}
+
+section.project {
+	padding: $spacing-xl $spacing-md;
+	background-color: $primary-color;
+	position: relative;
+	@include clearfix();
+	@include respond-to($screen-sm) {
+		padding: $spacing-lg 0;
+	};
+
+	.project-category {
+		color: white;
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: $spacing-md;
+		@include respond-to($screen-md) {
+			margin-bottom: $spacing-xl;
+		};
+		@include respond-to($screen-sm) {
+			font-size: 24px;
+			margin-bottom: $spacing-lg;
+		};
+		> span {
+			padding: 0 $spacing-sm;
+
+			&:hover {
+				color: $accent-color;
+			}
+
+			&.active {
+				color: $accent-color;
+			}
+		}
+	}
+
+	article {
+		width: 40%;
+		height: 500px;
+		color: $primary-color;
+		background-color: white;
+		float: left;
+		margin: 5%;
+		position: relative;
+		@include respond-to($screen-lg) {
+			height: 550px;
+		};
+		@include respond-to($screen-md) {
+			height: auto;
+			float: none;
+			width: 90%;
+		};
+
+		.project-image {
+			width: 100%;
+			height: 200px;
+			@include bg-img(none);
+		}
+
+		.project-content {
+			padding: $spacing-md;
+			@include respond-to($screen-md) {
+				padding-bottom: 60px;
+			};
+
+			> h4 {
+				color: $accent-color;
+				margin-bottom: 20px;
+			}
+		}
+
+		> a {
+			color: $primary-color;
+			@include abs-pos(auto, $spacing-md, $spacing-md, auto);
+
+			&:hover {
+				color: $accent-color;
+			}
+		}
+    }
+}
+
+section.life {
+	height: 600px;
+	@include respond-to($screen-md) {
+		height: 400px;
+	};
+	> .map {
+		@include match-container-size();
+	}
+}
+
+// Google map info window
+.life-info-window {
+	width: 400px;
+	height: 250px;
+	margin: 5px 0 2px 0;
+	position: relative;
+
+	.featured-image {
+		width: 40%;
+		height: 100%;
+		@include abs-pos(0);
+		@include bg-img();
+	}
+
+	.content {
+		display: inline-block;
+		width: 55%;
+		height: 100%;
+		margin-left: 45%;
+
+		> h4 {
+			color: $accent-color;
+		}
+	}
+}
+
+section.life-motto {
+	padding: $spacing-xl 0;
+	background-color: $primary-color;
+	@include respond-to($screen-sm) {
+		padding: $spacing-lg 0;
+	};
+
+	.wrapper {
+		width: 300px;
+		height: 300px;
+		position: relative;
+		margin: 150px auto 0 auto;
+
+		.featured-image {
+			border: 5px solid white;
+			z-index: 1;
+			@include abs-pos();
+			@include match-container-size();
+			@include bg-img("http://localhost/zicodeng/wp-content/uploads/2017/02/IMG_6071-e1487316980454.jpg");
+		}
+
+		.content {
+			padding: $spacing-md;
+			color: white;
+			border: 5px solid $accent-color;
+			@include abs-pos(-50%, auto, auto, -50%);
+			@include match-container-size();
+			@include respond-to($screen-md) {
+				border: none;
+				text-align: center;
+				left: auto;
+				padding: 0;
+			};
+
+			> h4 {
+				color: $accent-color;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

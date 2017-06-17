@@ -1,0 +1,15 @@
+/*
+Theme name: Ztopia
+*/
+
+// Import compass
+@import "compass";
+
+// Import all modules and partials
+@import "helpers/module";
+@import "base/module";
+@import "components/module";
+@import "layout/module";
+@import "pages/module";
+@import "vendors/module";
+// @import "themes/module";

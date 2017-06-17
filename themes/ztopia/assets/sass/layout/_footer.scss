@@ -1,0 +1,31 @@
+footer.site-footer {
+	width: 70%;
+	margin-left: 100%;
+	padding: $spacing-lg 0;
+	background-color: $primary-color;
+	color: white;
+	text-align: center;
+	@include transition(all 0.5s ease-in-out);
+	@include respond-to($screen-md) {
+		width: 100%;
+		margin-left: 0;
+	};
+
+	&.active {
+		margin-left: 30%;
+		@include respond-to($screen-md) {
+			// Always dispaly if screen size is less than tablet
+			margin-left: 0;
+		};
+	}
+}
+
+footer.site-footer > span::before {
+	content: "\f004";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #ED1C24;
+	margin: 0 2px;
+}

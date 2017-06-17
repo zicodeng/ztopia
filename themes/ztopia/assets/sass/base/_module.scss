@@ -1,0 +1,17 @@
+// This file collects all SASS files in base folder
+// It contains global styles such as resets, normalize, typography, colors, etc.
+
+// Reset browser default
+@import "compass/reset";
+
+// Import typography
+@import "typography";
+
+// Change box-sizing to border-box
+@import "box-sizing";
+
+// Reset anchor link
+@import "link";
+
+// Reset headings;
+@import "headings";
