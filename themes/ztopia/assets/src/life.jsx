@@ -19,7 +19,7 @@ class Life extends React.Component {
 	loadMap() {
 		$.ajax({
 			type: "GET",
-			url: "/zicodeng/wp-json/wp/v2/life-api/?per_page=100",
+			url: "./wp-json/wp/v2/life-api/?per_page=100",
 			dataType: "json"
 		})
 		.done((response) => {

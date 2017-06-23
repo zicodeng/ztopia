@@ -82,7 +82,7 @@ class Project extends React.Component {
 
 		$.ajax({
 			type: "GET",
-			url: "/zicodeng/wp-json/wp/v2/project-api/?per_page=100",
+			url: "./wp-json/wp/v2/project-api/?per_page=100",
 			dataType: "json"
 		})
 		.done((response) => {
