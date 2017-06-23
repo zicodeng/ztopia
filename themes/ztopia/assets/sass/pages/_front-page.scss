@@ -91,6 +91,9 @@ section.education {
 	padding: $spacing-xl 0 $spacing-lg 0;
 	overflow: hidden;
 	color: white;
+	@include respond-to($spcing-sm) {
+		padding-bottom: $spacing-xl;
+	};
 
 	article {
 		.institute-picture {
