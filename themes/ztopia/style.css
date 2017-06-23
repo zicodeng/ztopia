@@ -1,98 +1,1231 @@
 /*
-Error: Undefined variable: "$spcing-sm".
-        on line 94 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_front-page.scss, in `respond-to'
-        from line 94 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_front-page.scss
-        from line 2 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_module.scss
-        from line 13 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/style.scss
-
-Backtrace:
-C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_front-page.scss:94:in `respond-to'
-C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_front-page.scss:94
-C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_module.scss:2
-C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/style.scss:13
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:357:in `block (2 levels) in visit_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:357:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:357:in `block in visit_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+Theme name: Ztopia
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$spcing-sm\".\A         on line 94 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_front-page.scss, in `respond-to'\A         from line 94 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_front-page.scss\A         from line 2 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/pages/_module.scss\A         from line 13 of C:/xampp/htdocs/zicodeng/wp-content/themes/ztopia/assets/sass/style.scss"; }
+@-moz-keyframes rotate-clockwise {
+  0% {
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  25% {
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50% {
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75% {
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+@-webkit-keyframes rotate-clockwise {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+@keyframes rotate-clockwise {
+  0% {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  25% {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50% {
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75% {
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+@-moz-keyframes rotate-counter-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  75% {
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+@-webkit-keyframes rotate-counter-clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  75% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+@keyframes rotate-counter-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  75% {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url("./assets/bower_components/ubuntu/AW1e_taO6pHwMXcXW5w.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("./assets/bower_components/roboto/GBFwfMP4uA6AR0HCoLQ.ttf") format("truetype");
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a:hover, a:visited, a:link, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: black;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "ubuntu", sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+button,
+button:focus {
+  box-shadow: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+nav.site-nav {
+  font-weight: bold;
+  font-family: "ubuntu", sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  bottom: auto;
+  left: auto;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+nav.site-nav li {
+  padding: 15px 0;
+}
+nav.site-nav li > a {
+  color: white;
+}
+nav.site-nav li > a::after {
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 40px;
+  display: block;
+  margin: -10px -50px auto auto;
+  opacity: 0;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+nav.site-nav li > a:hover::after, nav.site-nav li > a.active::after {
+  opacity: 1;
+}
+
+html, body {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  color: black;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100%;
+}
+@media screen and (max-width: 767px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.4rem;
+}
+
+header.site-header {
+  height: 100vh;
+  width: 100vw;
+  background-color: skyblue;
+}
+
+footer.site-footer {
+  width: 70%;
+  margin-left: 100%;
+  padding: 40px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  footer.site-footer {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+footer.site-footer.active {
+  margin-left: 30%;
+}
+@media screen and (max-width: 992px) {
+  footer.site-footer.active {
+    margin-left: 0;
+  }
+}
+
+footer.site-footer > span::before {
+  content: "\f004";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #ED1C24;
+  margin: 0 2px;
+}
+
+aside.sidebar {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  left: -70%;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  aside.sidebar {
+    left: -100%;
+  }
+}
+
+aside.sidebar.active {
+  left: 0;
+}
+@media screen and (max-width: 992px) {
+  aside.sidebar.active {
+    display: none;
+  }
+}
+
+.blog-info-container {
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  color: white;
+  z-index: -1;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+.blog-info-container > h1 {
+  opacity: 0;
+  font-size: 6rem;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 40%;
+  right: auto;
+  bottom: auto;
+  left: -250px;
+}
+.blog-info-container > h1 .first-name {
+  color: black;
+}
+.blog-info-container > h1 .first-name::before {
+  content: "";
+  height: 5px;
+  width: 600px;
+  display: block;
+  background-color: black;
+  position: absolute;
+  top: -10px;
+  right: auto;
+  bottom: auto;
+  left: -300px;
+}
+.blog-info-container > h1 .last-name::after {
+  content: '"I aim to save people from the overwhelming tsunami of information"';
+  width: 800px;
+  font-size: 18px;
+  font-weight: normal;
+  display: block;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -25px;
+  left: 270px;
+}
+
+.blog-info-container.active {
+  position: absolute;
+  top: auto;
+  right: 25%;
+  bottom: auto;
+  left: auto;
+}
+.blog-info-container.active > h1 {
+  opacity: 1;
+}
+
+main.front-page {
+  width: 70%;
+  margin-left: 100%;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  main.front-page {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+main.front-page.active {
+  margin-left: 30%;
+}
+@media screen and (max-width: 992px) {
+  main.front-page.active {
+    margin-left: 0;
+  }
+}
+
+section.home {
+  background-color: black;
+  padding: 350px 0 300px 0;
+}
+@media screen and (max-width: 767px) {
+  section.home {
+    padding: 200px 0;
+  }
+}
+section.home > .logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+section.home > .logo > .logo-frame {
+  padding: 20px;
+  margin: 0 auto;
+  border: 5px solid #0082E5;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+  width: 100%;
+  height: 100%;
+  -moz-animation: rotate-clockwise 4s ease 0s infinite;
+  -webkit-animation: rotate-clockwise 4s ease 0s infinite;
+  animation: rotate-clockwise 4s ease 0s infinite;
+}
+section.home > .logo > .logo-frame:nth-child(2) {
+  margin-left: -205px;
+  border: 5px solid white;
+  -moz-animation: rotate-counter-clockwise 4s ease 0s infinite;
+  -webkit-animation: rotate-counter-clockwise 4s ease 0s infinite;
+  animation: rotate-counter-clockwise 4s ease 0s infinite;
+}
+section.home > .logo > h1 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+section.about {
+  padding: 80px 80px 120px 80px;
+}
+@media screen and (max-width: 1199px) {
+  section.about {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section.about {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.about {
+    padding: 40px 40px 80px 40px;
+  }
+}
+section.about article h1 {
+  color: #0082E5;
+}
+section.about article .about-subtitle {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+section.about article .profile-picture {
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  section.about article .profile-picture {
+    margin-top: 20px;
+  }
+}
+section.about article .profile-picture > .picture-frame {
+  border: 5px solid #0082E5;
+  position: absolute;
+  top: 50px;
+  right: auto;
+  bottom: auto;
+  left: 50px;
+  width: 90%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  section.about article .profile-picture > .picture-frame {
+    position: absolute;
+    top: 40px;
+    right: auto;
+    bottom: auto;
+    left: 40px;
+  }
+}
+section.about article .profile-picture > img {
+  position: relative;
+  border: 5px solid black;
+  width: 90%;
+  height: 100%;
+}
+
+section.education {
+  background-color: black;
+  padding: 80px 0 40px 0;
+  overflow: hidden;
+  color: white;
+}
+@media screen and (max-width: 10px) {
+  section.education {
+    padding-bottom: 80px;
+  }
+}
+section.education article .institute-picture {
+  width: 100%;
+  height: 200px;
+  margin-left: -15px;
+}
+section.education article .institute-picture > p {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 767px) {
+  section.education article .institute-picture > p {
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+section.education article .institute-thumbnail {
+  height: 200px;
+  width: 200px;
+  border: 5px solid white;
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  section.education article .institute-thumbnail {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+section.education article .institute-thumbnail > img {
+  width: 100%;
+  height: 100%;
+}
+section.education article .thumbnail-stripe {
+  width: 100%;
+  height: 100px;
+  background-color: #0082E5;
+  position: absolute;
+  top: 115px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+@media screen and (max-width: 767px) {
+  section.education article .thumbnail-stripe {
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+section.education article .education-content {
+  padding: 0 40px 40px 40px;
+}
+@media screen and (max-width: 767px) {
+  section.education article .education-content {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+section.education article .education-content > h4 {
+  color: #0082E5;
+  margin-bottom: 20px;
+}
+section.education article:nth-child(odd) {
+  margin-bottom: 40px;
+}
+section.education article:nth-child(odd) .institute-picture > p {
+  position: absolute;
+  top: 35px;
+  right: 190px;
+  bottom: auto;
+  left: auto;
+}
+@media screen and (max-width: 767px) {
+  section.education article:nth-child(odd) .institute-picture > p {
+    position: absolute;
+    top: -35px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+  }
+}
+section.education article:nth-child(odd) .institute-thumbnail {
+  right: 15px;
+}
+@media screen and (max-width: 767px) {
+  section.education article:nth-child(even) {
+    display: none;
+  }
+}
+section.education article:nth-child(even) .institute-picture > p {
+  position: absolute;
+  top: 35px;
+  right: auto;
+  bottom: auto;
+  left: 190px;
+}
+@media screen and (max-width: 767px) {
+  section.education article:nth-child(even) .institute-picture > p {
+    position: absolute;
+    top: -35px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+  }
+}
+section.education article:nth-child(even) .institute-thumbnail {
+  left: 15px;
+}
+@media screen and (max-width: 767px) {
+  section.education article:nth-child(even) .institute-thumbnail {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+section.education article:nth-child(even) .education-content {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  section.education article:nth-child(even) .education-content {
+    text-align: center;
+  }
+}
+section.education article.education-mobile {
+  display: none;
+  margin-bottom: -80px;
+}
+@media screen and (max-width: 767px) {
+  section.education article.education-mobile {
+    display: block;
+  }
+}
+
+section.experience {
+  padding: 40px 0;
+}
+@media screen and (max-width: 767px) {
+  section.experience {
+    padding: 10px 0;
+  }
+}
+section.experience article {
+  width: 80%;
+  height: 300px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  background-image: url(none);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  section.experience article {
+    width: 90%;
+  }
+}
+section.experience article .experience-content {
+  padding: 20px 40px;
+  margin-top: 235px;
+  color: white;
+  background-color: rgba(0, 130, 229, 0.8);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+section.experience article .experience-content:hover {
+  margin-top: 0;
+}
+@media screen and (max-width: 992px) {
+  section.experience article .experience-content:hover {
+    margin-top: 235px;
+  }
+}
+section.experience article .experience-content > h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.project {
+  padding: 80px 20px;
+  background-color: black;
+  position: relative;
+}
+section.project:before, section.project:after {
+  content: "";
+  display: table;
+}
+section.project:after {
+  clear: both;
+}
+@media screen and (max-width: 767px) {
+  section.project {
+    padding: 40px 0;
+  }
+}
+section.project .project-category {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  section.project .project-category {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.project .project-category {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+section.project .project-category > span {
+  padding: 0 10px;
+}
+section.project .project-category > span:hover {
+  color: #0082E5;
+}
+section.project .project-category > span.active {
+  color: #0082E5;
+}
+section.project article {
+  width: 40%;
+  height: 500px;
+  color: black;
+  background-color: white;
+  float: left;
+  margin: 5%;
+  position: relative;
+}
+@media screen and (max-width: 1199px) {
+  section.project article {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section.project article {
+    height: auto;
+    float: none;
+    width: 90%;
+  }
+}
+section.project article .project-image {
+  width: 100%;
+  height: 200px;
+  background-image: url(none);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.project article .project-content {
+  padding: 20px;
+}
+@media screen and (max-width: 992px) {
+  section.project article .project-content {
+    padding-bottom: 60px;
+  }
+}
+section.project article .project-content > h4 {
+  color: #0082E5;
+  margin-bottom: 20px;
+}
+section.project article > a {
+  color: black;
+  position: absolute;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+}
+section.project article > a:hover {
+  color: #0082E5;
+}
+
+section.life {
+  height: 600px;
+}
+@media screen and (max-width: 992px) {
+  section.life {
+    height: 400px;
+  }
+}
+section.life > .map {
+  width: 100%;
+  height: 100%;
+}
+
+.life-info-window {
+  width: 400px;
+  height: 250px;
+  margin: 5px 0 2px 0;
+  position: relative;
+}
+.life-info-window .featured-image {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  background-image: url(none);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.life-info-window .content {
+  display: inline-block;
+  width: 55%;
+  height: 100%;
+  margin-left: 45%;
+}
+.life-info-window .content > h4 {
+  color: #0082E5;
+}
+
+section.life-motto {
+  padding: 80px 0;
+  background-color: black;
+}
+@media screen and (max-width: 767px) {
+  section.life-motto {
+    padding: 40px 0;
+  }
+}
+section.life-motto .wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 150px auto 0 auto;
+}
+section.life-motto .wrapper .featured-image {
+  border: 5px solid white;
+  z-index: 1;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://www.zicodeng.me/wp-content/uploads/2017/06/zico-profile-casual.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.life-motto .wrapper .content {
+  padding: 20px;
+  color: white;
+  border: 5px solid #0082E5;
+  position: absolute;
+  top: -50%;
+  right: auto;
+  bottom: auto;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 992px) {
+  section.life-motto .wrapper .content {
+    border: none;
+    text-align: center;
+    left: auto;
+    padding: 0;
+  }
+}
+section.life-motto .wrapper .content > h4 {
+  color: #0082E5;
+  margin-bottom: 20px;
+}
+
+main.single-project > .project-title {
+  color: white;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  main.single-project > .project-title {
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+#fullpage .section {
+  overflow: hidden;
+}
+#fullpage .section .slide-content {
+  color: white;
+}
+#fullpage .section .slide-content > h4 {
+  color: #0082E5;
+  margin-bottom: 20px;
+}
+#fullpage .section.active:nth-child(1) .image-group {
+  margin-top: 0;
+}
+#fullpage .section.active:nth-child(1) .image-group img:hover {
+  margin-top: -35%;
+}
+@media screen and (max-width: 992px) {
+  #fullpage .section.active:nth-child(1) .image-group img:hover {
+    margin-top: -50%;
+  }
+}
+#fullpage .section.active:nth-child(2) .image-group img:nth-child(1) {
+  margin-top: 0;
+  margin-left: 0;
+}
+#fullpage .section.active:nth-child(3) .image-group img:nth-child(1) {
+  left: 0;
+}
+#fullpage .section.active:nth-child(3) .image-group img:nth-child(2) {
+  left: 100px;
+}
+#fullpage .section.active:nth-child(3) .image-group img:nth-child(3) {
+  left: 200px;
+}
+#fullpage .section.active:nth-child(3) .image-group img:nth-child(4) {
+  left: 300px;
+}
+#fullpage .section .fp-tableCell {
+  display: block;
+}
+#fullpage .section:nth-child(1) .fp-tableCell {
+  text-align: center;
+}
+#fullpage .section:nth-child(1) .slide-content {
+  width: 50%;
+  margin: 0 25% 100px 25%;
+  padding-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(1) .slide-content {
+    width: 80%;
+    margin: 0 10% 100px 10%;
+    padding-top: 50px;
+  }
+}
+#fullpage .section:nth-child(1) .image-group {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  margin-top: 500px;
+  transition: all 0.8s ease-in-out;
+}
+#fullpage .section:nth-child(1) .image-group img {
+  display: block;
+  width: 280px;
+  height: auto;
+  margin: 10px;
+  float: left;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 680px) {
+  #fullpage .section:nth-child(1) .image-group img:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1020px) {
+  #fullpage .section:nth-child(1) .image-group img:nth-child(3) {
+    display: none;
+  }
+}
+#fullpage .section:nth-child(2) .slide-content {
+  margin-top: 150px;
+  width: 80;
+  border-left: 5px solid #0082E5;
+  padding-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(2) .slide-content {
+    margin: 0 10% 40px 10%;
+  }
+}
+#fullpage .section:nth-child(2) .slide-content h4 {
+  color: #0082E5;
+}
+#fullpage .section:nth-child(2) .image-group {
+  margin-left: 200px;
+}
+#fullpage .section:nth-child(2) .image-group img:nth-child(1) {
+  width: 450px;
+  margin-top: 600px;
+  margin-left: 600px;
+  transition: all 1s ease-in-out;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(2) .image-group img:nth-child(1) {
+    width: 280px;
+  }
+}
+#fullpage .section:nth-child(3) .slide-content {
+  margin: 100px 20px auto 20px;
+  padding-left: 20px;
+  border-left: 5px solid #0082E5;
+}
+@media screen and (max-width: 1250px) {
+  #fullpage .section:nth-child(3) .slide-content {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(3) .slide-content {
+    height: 250px;
+    overflow-y: scroll;
+  }
+}
+#fullpage .section:nth-child(3) .slide-content h4 {
+  color: #0082E5;
+}
+#fullpage .section:nth-child(3) .image-group {
+  position: absolute;
+  margin-left: -100px;
+}
+@media screen and (min-width: 1200px) {
+  #fullpage .section:nth-child(3) .image-group:hover img:nth-child(2) {
+    left: 300px;
+  }
+  #fullpage .section:nth-child(3) .image-group:hover img:nth-child(3) {
+    left: 600px;
+  }
+  #fullpage .section:nth-child(3) .image-group:hover img:nth-child(4) {
+    left: 900px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #fullpage .section:nth-child(3) .image-group {
+    margin-top: 250px;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fullpage .section:nth-child(3) .image-group {
+    margin-top: 300px;
+    left: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(3) .image-group {
+    left: 50%;
+    margin-left: -140px;
+  }
+}
+#fullpage .section:nth-child(3) .image-group img {
+  width: 280px;
+  height: auto;
+  transition: all 0.8s ease-in-out;
+  position: absolute;
+  z-index: 1;
+}
+#fullpage .section:nth-child(3) .image-group img:nth-child(1) {
+  left: -500px;
+}
+#fullpage .section:nth-child(3) .image-group img:nth-child(2) {
+  left: -600px;
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(3) .image-group img:nth-child(2) {
+    display: none;
+  }
+}
+#fullpage .section:nth-child(3) .image-group img:nth-child(3) {
+  left: -700px;
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(3) .image-group img:nth-child(3) {
+    display: none;
+  }
+}
+#fullpage .section:nth-child(3) .image-group img:nth-child(4) {
+  left: -800px;
+}
+@media screen and (max-width: 767px) {
+  #fullpage .section:nth-child(3) .image-group img:nth-child(4) {
+    display: none;
+  }
+}
