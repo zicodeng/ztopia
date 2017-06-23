@@ -614,7 +614,7 @@ section.education {
   overflow: hidden;
   color: white;
 }
-@media screen and (max-width: 10px) {
+@media screen and (max-width: 767px) {
   section.education {
     padding-bottom: 80px;
   }

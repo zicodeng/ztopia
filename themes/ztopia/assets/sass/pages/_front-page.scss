@@ -91,7 +91,7 @@ section.education {
 	padding: $spacing-xl 0 $spacing-lg 0;
 	overflow: hidden;
 	color: white;
-	@include respond-to($spacing-sm) {
+	@include respond-to($screen-sm) {
 		padding-bottom: $spacing-xl;
 	};
 
