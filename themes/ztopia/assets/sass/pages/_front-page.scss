@@ -134,9 +134,10 @@ section.education {
 		}
 
 		.education-content {
-			padding: $spacing-lg;
+			padding: 0 $spacing-lg $spacing-lg $spacing-lg;
 			@include respond-to($screen-sm) {
 				text-align: center;
+				padding-top: 30px;
 			};
 
 			> h4 {

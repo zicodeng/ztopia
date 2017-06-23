@@ -677,11 +677,12 @@ section.education article .thumbnail-stripe {
   }
 }
 section.education article .education-content {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
 }
 @media screen and (max-width: 767px) {
   section.education article .education-content {
     text-align: center;
+    padding-top: 30px;
   }
 }
 section.education article .education-content > h4 {
