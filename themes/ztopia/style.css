@@ -610,7 +610,7 @@ section.about article .profile-picture > img {
 
 section.education {
   background-color: black;
-  padding: 80px 0;
+  padding: 80px 0 40px 0;
   overflow: hidden;
   color: white;
 }
@@ -690,7 +690,7 @@ section.education article .education-content > h4 {
   margin-bottom: 20px;
 }
 section.education article:nth-child(odd) {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 section.education article:nth-child(odd) .institute-picture > p {
   position: absolute;

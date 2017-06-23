@@ -88,7 +88,7 @@ section.about {
 
 section.education {
 	background-color: $primary-color;
-	padding: $spacing-xl 0;
+	padding: $spacing-xl 0 $spacing-lg 0;
 	overflow: hidden;
 	color: white;
 
@@ -147,7 +147,7 @@ section.education {
 		}
 
 		&:nth-child(odd) {
-			margin-bottom: $spacing-xl;
+			margin-bottom: $spacing-lg;
 
 			.institute-picture {
 				> p {
