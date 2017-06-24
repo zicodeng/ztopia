@@ -1153,12 +1153,6 @@ main.single-project > .project-title {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  #fullpage .section:nth-child(3) .slide-content {
-    height: 250px;
-    overflow-y: scroll;
-  }
-}
 #fullpage .section:nth-child(3) .slide-content h4 {
   color: #0082E5;
 }

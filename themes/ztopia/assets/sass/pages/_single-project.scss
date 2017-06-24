@@ -165,10 +165,6 @@ main.single-project > .project-title {
 				@include respond-to(1250px) {
 					margin-top: 0;
 				};
-				@include respond-to($screen-sm) {
-					height: 250px;
-					overflow-y: scroll;
-				};
 
 				h4 {
 					color: $accent-color;
