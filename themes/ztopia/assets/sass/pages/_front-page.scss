@@ -2,7 +2,7 @@ section.home {
 	background-color: $primary-color;
 	padding: 350px 0 300px 0;
 	@include respond-to($screen-sm) {
-		padding: 200px 0;
+		padding: 250px 0;
 	};
 
 	> .logo {
@@ -211,6 +211,7 @@ section.experience {
 	@include respond-to($screen-sm) {
 		padding: $spacing-sm 0;
 	};
+
 	article {
         width: 80%;
 		height: 300px;
@@ -230,6 +231,9 @@ section.experience {
 			cursor: pointer;
 			@include match-container-size();
 			@include transition($transition);
+			@include respond-to($screen-sm) {
+				padding: $spacing-md 0;
+			};
 
 			&:hover {
 				margin-top: 0;

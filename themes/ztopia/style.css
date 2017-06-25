@@ -504,7 +504,7 @@ section.home {
 }
 @media screen and (max-width: 767px) {
   section.home {
-    padding: 200px 0;
+    padding: 250px 0;
   }
 }
 section.home > .logo {
@@ -808,6 +808,11 @@ section.experience article .experience-content {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+@media screen and (max-width: 767px) {
+  section.experience article .experience-content {
+    padding: 20px 0;
+  }
+}
 section.experience article .experience-content:hover {
   margin-top: 0;
 }
@@ -1076,14 +1081,14 @@ main.single-project > .project-title {
 }
 #fullpage .section:nth-child(1) .slide-content {
   width: 50%;
-  margin: 0 25% 100px 25%;
-  padding-top: 100px;
+  margin: 0 25% 80px 25%;
+  padding-top: 50px;
 }
 @media screen and (max-width: 767px) {
   #fullpage .section:nth-child(1) .slide-content {
     width: 80%;
-    margin: 0 10% 100px 10%;
-    padding-top: 50px;
+    margin: 0 10% 80px 10%;
+    padding-top: 0px;
   }
 }
 #fullpage .section:nth-child(1) .image-group {

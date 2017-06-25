@@ -83,13 +83,13 @@ main.single-project > .project-title {
 
 			.slide-content {
 				width: 50%;
-				margin: 0 25% 100px 25%;
-				padding-top: 100px;
+				margin: 0 25% 80px 25%;
+				padding-top: 50px;
 
 				@include respond-to($screen-sm) {
 					width: 80%;
-					margin: 0 10% 100px 10%;
-					padding-top: 50px;
+					margin: 0 10% 80px 10%;
+					padding-top: 0px;
 				};
 			}
 
