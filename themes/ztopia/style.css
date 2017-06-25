@@ -1050,7 +1050,7 @@ main.single-project > .project-title {
   margin-top: 0;
 }
 #fullpage .section.active:nth-child(1) .image-group img:hover {
-  margin-top: -35%;
+  margin-top: -30%;
 }
 @media screen and (max-width: 992px) {
   #fullpage .section.active:nth-child(1) .image-group img:hover {
@@ -1087,7 +1087,7 @@ main.single-project > .project-title {
 @media screen and (max-width: 767px) {
   #fullpage .section:nth-child(1) .slide-content {
     width: 80%;
-    margin: 0 10% 80px 10%;
+    margin: 0 10% 40px 10%;
     padding-top: 0px;
   }
 }
@@ -1184,7 +1184,7 @@ main.single-project > .project-title {
 }
 @media screen and (max-width: 992px) {
   #fullpage .section:nth-child(3) .image-group {
-    margin-top: 300px;
+    margin-top: 280px;
     left: 25%;
   }
 }

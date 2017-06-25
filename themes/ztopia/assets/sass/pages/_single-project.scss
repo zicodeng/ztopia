@@ -33,7 +33,7 @@ main.single-project > .project-title {
 					margin-top: 0;
 
 					img:hover {
-						margin-top: -35%;
+						margin-top: -30%;
 						@include respond-to($screen-md) {
 							margin-top: -50%;
 						};
@@ -88,7 +88,7 @@ main.single-project > .project-title {
 
 				@include respond-to($screen-sm) {
 					width: 80%;
-					margin: 0 10% 80px 10%;
+					margin: 0 10% 40px 10%;
 					padding-top: 0px;
 				};
 			}
@@ -194,7 +194,7 @@ main.single-project > .project-title {
 					left: 35%;
 				};
 				@include respond-to($screen-md) {
-					margin-top: 300px;
+					margin-top: 280px;
 					left: 25%;
 				};
 				@include respond-to($screen-sm) {
