@@ -53,8 +53,6 @@ class Life extends React.Component {
 							title: title
 						});
 
-						console.log(marker);
-
 						// Display info window on hover
 						var contentString =
                             '<div class="life-info-window">' +
