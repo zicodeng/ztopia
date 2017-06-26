@@ -403,6 +403,9 @@ section.life-motto {
 			> h4 {
 				color: $accent-color;
 				margin-bottom: 10px;
+				@include respond-to($screen-md) {
+					margin-bottom: 20px;
+				};
 			}
 		}
 	}

@@ -1018,6 +1018,11 @@ section.life-motto .wrapper .content > h4 {
   color: #0082E5;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 992px) {
+  section.life-motto .wrapper .content > h4 {
+    margin-bottom: 20px;
+  }
+}
 
 main.single-project > .project-title {
   color: white;
