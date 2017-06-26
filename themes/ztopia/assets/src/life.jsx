@@ -48,9 +48,12 @@ class Life extends React.Component {
 
 						// Add marker
 						var marker = new google.maps.Marker({
+							animation: google.maps.Animation.DROP,
 							position: coordinates,
 							title: title
 						});
+
+						console.log(marker);
 
 						// Display info window on hover
 						var contentString =
