@@ -85,4 +85,102 @@ function custom_login_style() {
 
 add_action('login_head', 'custom_login_style');
 
+// Add GitHub field on the user editing screens
+// P1: $user: WP_User user object
+function add_usermeta_form_field_github( $user ) {
+    ?>
+	<h3>Social Media</h3>
+    <table class="form-table">
+        <tr>
+            <th>
+                <label for="title">GitHub</label>
+            </th>
+            <td>
+                <input type="text"
+                       class="regular-text ltr"
+                       id="github"
+                       name="github"
+                       value="<?= esc_attr( get_user_meta( $user->ID, 'github', true ) ); ?>"
+                       required>
+                <p class="description">Link to your personal GitHub</p>
+            </td>
+        </tr>
+    </table>
+    <?php
+}
+
+// add the field to user's own profile editing screen
+add_action( 'edit_user_profile', 'add_usermeta_form_field_github' );
+// add the field to user profile editing screen
+add_action( 'show_user_profile', 'add_usermeta_form_field_github' );
+
+// The save action.
+// P1: $user_id int the ID of the current user.
+function update_usermeta_form_field_github( $user_id ) {
+    // Check that the current user have the capability to edit the $user_id
+    if ( ! current_user_can( 'edit_user', $user_id ) ) {
+        return false;
+    }
+
+    // Create/update user meta for the $user_id
+    return update_user_meta(
+        $user_id,
+        'github',
+        $_POST['github']
+    );
+}
+
+// Add the save action to user's own profile editing screen update
+add_action( 'personal_options_update', 'update_usermeta_form_field_github' );
+// Add the save action to user profile editing screen update
+add_action( 'edit_user_profile_update', 'update_usermeta_form_field_github' );
+
+// Add LinkedIn field on the user editing screens
+// P1: $user: WP_User user object
+function add_usermeta_form_field_linkedin( $user ) {
+    ?>
+    <table class="form-table">
+        <tr>
+            <th>
+                <label for="title">LinkedIn</label>
+            </th>
+            <td>
+                <input type="text"
+                       class="regular-text ltr"
+                       id="linkedin"
+                       name="linkedin"
+                       value="<?= esc_attr( get_user_meta( $user->ID, 'linkedin', true ) ); ?>"
+                       required>
+                <p class="description">Link to your personal LinkedIn</p>
+            </td>
+        </tr>
+    </table>
+    <?php
+}
+
+// add the field to user's own profile editing screen
+add_action( 'edit_user_profile', 'add_usermeta_form_field_linkedin' );
+// add the field to user profile editing screen
+add_action( 'show_user_profile', 'add_usermeta_form_field_linkedin' );
+
+// The save action.
+// P1: $user_id int the ID of the current user.
+function update_usermeta_form_field_linkedin( $user_id ) {
+    // Check that the current user have the capability to edit the $user_id
+    if ( ! current_user_can( 'edit_user', $user_id ) ) {
+        return false;
+    }
+
+    // Create/update user meta for the $user_id
+    return update_user_meta(
+        $user_id,
+        'linkedin',
+        $_POST['linkedin']
+    );
+}
+
+// Add the save action to user's own profile editing screen update
+add_action( 'personal_options_update', 'update_usermeta_form_field_linkedin' );
+// Add the save action to user profile editing screen update
+add_action( 'edit_user_profile_update', 'update_usermeta_form_field_linkedin' );
 ?>

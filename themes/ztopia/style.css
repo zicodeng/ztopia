@@ -366,8 +366,20 @@ footer.site-footer.active {
     margin-left: 0;
   }
 }
-
-footer.site-footer > span::before {
+footer.site-footer li {
+  display: inline-block;
+  margin: 0 5px 20px;
+}
+footer.site-footer li a {
+  color: white;
+}
+footer.site-footer li a:hover {
+  color: #0082E5;
+}
+footer.site-footer li a i {
+  font-size: 30px;
+}
+footer.site-footer p span::before {
   content: "\f004";
   font-family: FontAwesome;
   font-style: normal;

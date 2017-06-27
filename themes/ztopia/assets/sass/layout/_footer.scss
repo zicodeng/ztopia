@@ -18,14 +18,33 @@ footer.site-footer {
 			margin-left: 0;
 		};
 	}
-}
 
-footer.site-footer > span::before {
-	content: "\f004";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    color: #ED1C24;
-	margin: 0 2px;
+	li {
+		display: inline-block;
+		margin: 0 5px $spacing-md;
+
+		a {
+			color: white;
+
+			&:hover {
+				color: $accent-color;
+			}
+
+			i {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		span::before {
+			content: "\f004";
+		    font-family: FontAwesome;
+		    font-style: normal;
+		    font-weight: normal;
+		    text-decoration: inherit;
+		    color: #ED1C24;
+			margin: 0 2px;
+		}
+	}
 }

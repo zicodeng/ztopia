@@ -251,7 +251,27 @@ get_sidebar();
 	</section>
 </main>
 <footer class="site-footer">
-    Created with <span></span> by Zico Deng
+	<ul>
+		<?php
+		$user = get_user_by( 'email', 'zicodeng@gmail.com' );
+		$userID = $user->ID;
+		$userLinkedIn = get_user_meta( $userID, 'linkedin', true);
+		if ( strlen( $userLinkedIn ) ) {
+		?>
+			<li><a href="<?php echo $userLinkedIn; ?>" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+		<?php
+		}
+		?>
+		<?php
+		$userGitHub = get_user_meta( $userID, 'github', true);
+		if ( strlen( $userGitHub ) ) {
+		?>
+			<li><a href="<?php echo $userGitHub; ?>" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+		<?php
+		}
+		?>
+	</ul>
+    <p>Created with <span></span> by Zico Deng</p>
 </footer>
 
 <?php
