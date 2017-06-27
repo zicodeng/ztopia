@@ -1,1 +1,0 @@
-‚ﬁRY<?php exit; ?>a:1:{s:7:"content";a:7:{s:10:"_edit_last";a:1:{i:0;s:1:"1";}s:10:"_edit_lock";a:1:{i:0;s:12:"1498459307:1";}s:8:"latitude";a:1:{i:0;s:7:"19.8968";}s:9:"longitude";a:1:{i:0;s:8:"155.5828";}s:16:"life_time_period";a:1:{i:0;s:2:"sd";}s:13:"life_location";a:1:{i:0;s:6:"hawaii";}s:16:"life_description";a:1:{i:0;s:2:"Hi";}}}
