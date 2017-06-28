@@ -1,0 +1,17 @@
+main.thank-you {
+	height: 100vh;
+	background-color: $primary-color;
+	text-align: center;
+	color: white;
+	padding: 250px $spacing-md 0;
+
+	> h1 {
+		font-size: 130px;
+		@include respond-to($screen-md) {
+			font-size: 120px;
+		};
+		@include respond-to($screen-sm) {
+			font-size: 55px;
+		};
+	}
+}

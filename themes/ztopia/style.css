@@ -1398,3 +1398,24 @@ main.single-project > .project-title {
     display: none;
   }
 }
+
+main.thank-you {
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 250px 20px 0;
+}
+main.thank-you > h1 {
+  font-size: 130px;
+}
+@media screen and (max-width: 992px) {
+  main.thank-you > h1 {
+    font-size: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main.thank-you > h1 {
+    font-size: 55px;
+  }
+}
