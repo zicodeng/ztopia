@@ -36,6 +36,12 @@ footer.site-footer {
 		}
 	}
 
+	.total-page-view {
+		span {
+			color: $accent-color;
+		}
+	}
+
 	.created-by {
 		span::before {
 			content: "\f004";

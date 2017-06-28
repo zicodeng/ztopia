@@ -379,6 +379,9 @@ footer.site-footer li a:hover {
 footer.site-footer li a i {
   font-size: 30px;
 }
+footer.site-footer .total-page-view span {
+  color: #0082E5;
+}
 footer.site-footer .created-by span::before {
   content: "\f004";
   font-family: FontAwesome;

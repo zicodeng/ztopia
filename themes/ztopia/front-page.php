@@ -271,7 +271,7 @@ get_sidebar();
 		}
 		?>
 	</ul>
-	<p>Total page view:
+	<p class="total-page-view">Total page view:
 		<span>
 		<?php
 		function total_page_view_count( $post_id ) {
@@ -292,7 +292,8 @@ get_sidebar();
 			}
 			return absint( $count );
 		}
-		echo total_page_view_count( $post_id );
+		$front_page_id = get_option( 'page_on_front' );
+		echo total_page_view_count( $front_page_id );
 		?>
 		</span>
 	</p>
