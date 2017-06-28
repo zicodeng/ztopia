@@ -5,14 +5,20 @@ $email = strip_tags( $_POST['email'] );
 $message = strip_tags( $_POST['message'] );
 
 $to = 'zicodeng@gmail.com';
-$subject = 'Contact';
-$headers = 'From: ' . $email .'\r\n';
-$headers .= 'Reply-To: ' . $email .'\r\n';
-$headers .= 'Location: http://www.zicodeng.me';
+$subject = 'Contact From www.zicodeng.me';
+$headers = 'From: ' . $email;
 
 if ( mail( $to, $subject, $message, $headers ) ) {
-    echo 'Email sent successfully!';
+	?>
+	<script type="text/javascript">
+		window.location = "http://www.zicodeng.me/thank-you";
+	</script>
+	<?php
 } else {
-    die('Failure: Email was not sent!');
+	?>
+	<script type="text/javascript">
+		window.location = "http://www.zicodeng.me";
+	</script>
+	<?php
 }
 ?>
