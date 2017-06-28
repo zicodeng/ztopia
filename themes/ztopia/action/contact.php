@@ -6,9 +6,7 @@ $message = strip_tags( $_POST['message'] );
 
 $to = 'zicodeng@gmail.com';
 $subject = 'zicodeng.me: Message From ' . $name;
-$headers = 'From: ' . $email . '\r\n';
-$headers .= 'Reply-To:' . $email . '\r\n';
-$headers .= 'Return-Path:' . $email . '\r\n';
+$headers = 'From: ' . $email;
 
 if ( mail( $to, $subject, $message, $headers ) ) {
 	header("Location: http://www.zicodeng.me/thank-you");
