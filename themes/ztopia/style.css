@@ -368,7 +368,7 @@ footer.site-footer.active {
 }
 footer.site-footer li {
   display: inline-block;
-  margin: 0 5px 10px;
+  margin: 0 5px 20px;
 }
 footer.site-footer li a {
   color: white;
@@ -378,6 +378,9 @@ footer.site-footer li a:hover {
 }
 footer.site-footer li a i {
   font-size: 30px;
+}
+footer.site-footer .total-page-view {
+  margin-bottom: 20px;
 }
 footer.site-footer .total-page-view span {
   color: #0082E5;

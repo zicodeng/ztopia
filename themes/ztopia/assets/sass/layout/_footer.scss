@@ -21,7 +21,7 @@ footer.site-footer {
 
 	li {
 		display: inline-block;
-		margin: 0 5px $spacing-sm;
+		margin: 0 5px $spacing-md;
 
 		a {
 			color: white;
@@ -37,6 +37,7 @@ footer.site-footer {
 	}
 
 	.total-page-view {
+		margin-bottom: $spacing-md;
 		span {
 			color: $accent-color;
 		}
