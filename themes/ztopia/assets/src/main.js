@@ -45,6 +45,11 @@ var map;
 				$(document).on("scroll", activeMainPanelOnScroll);
 			});
 		});
+
+		// Contact form
+		$(".contact-widget").click(function() {
+			$(".contact-box").slideToggle(500);
+		});
 	}); // document.ready() callback end
 
 	// This function adds indicator on menu item,

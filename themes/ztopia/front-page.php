@@ -7,6 +7,28 @@ get_sidebar();
 ?>
 
 <main class="front-page">
+	<section class="contact">
+		<div class="contact-widget"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+		<div class="contact-box">
+			<form class="material-form" role="form" name="contact_form" method="POST" action="<?php echo get_template_directory_uri(); ?>/action/contact.php">
+				<h3>Contact</h3>
+				<div class="form-group">
+					<input type="text" name="name" required />
+					<label for="name">Name</label>
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" required />
+					<label for="email">Email</label>
+				</div>
+				<div class="form-group">
+					<textarea name="message" rows="1" cols="40" required></textarea>
+					<label for="message">Message</label>
+				</div>
+				<button>SUBMIT</button>
+				<p class="note">Note: by submitting this form, you will be sending an email to my personal email address. Please don't spam me. I will contact you back shortly if I am interested in your message.</p>
+			</form>
+		</div>
+	</section>
 	<section class="home">
 		<div class="logo">
 			<div class="logo-frame"></div>

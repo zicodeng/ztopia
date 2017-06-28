@@ -315,6 +315,107 @@ nav.site-nav li > a:hover::after, nav.site-nav li > a.active::after {
   opacity: 1;
 }
 
+.material-form {
+  box-sizing: border-box;
+  width: 460px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .material-form {
+    width: 320px;
+    padding-bottom: 30px;
+  }
+}
+.material-form > h3 {
+  background: #0082E5;
+  color: white;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .material-form > h3 {
+    padding: 30px 0;
+  }
+}
+.material-form > button {
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  padding: 10px;
+  width: 200px;
+  color: white;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.material-form > button:hover {
+  background-color: #0082E5;
+}
+.material-form > .note {
+  color: #0082E5;
+  font-size: 12px;
+  margin: 30px 40px 0;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+.form-group {
+  position: relative;
+  margin: 40px;
+  z-index: 1;
+}
+.form-group > input, .form-group textarea {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: solid 1.5px #0082E5;
+  padding: 5px 0;
+  background: linear-gradient(to bottom, #ffffff 96%, #0082e5 4%);
+  background-position: -400px 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .form-group > input, .form-group textarea {
+    width: 240px;
+    background-position: -240px 0;
+    background-size: 240px 100%;
+  }
+}
+.form-group > input + label, .form-group textarea + label {
+  color: #ddd;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.form-group > input:focus + label, .form-group > input:valid + label, .form-group textarea:focus + label, .form-group textarea:valid + label {
+  color: #0082E5;
+  font-size: 14px;
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+input, textarea {
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
 html, body {
   font-family: "roboto", sans-serif;
   font-size: 18px;
@@ -513,6 +614,52 @@ main.front-page.active {
 @media screen and (max-width: 992px) {
   main.front-page.active {
     margin-left: 0;
+  }
+}
+
+section.contact .contact-widget {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #0082E5;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  section.contact .contact-widget {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+section.contact .contact-widget i {
+  font-size: 25px;
+  color: white;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+}
+section.contact .contact-box {
+  position: fixed;
+  bottom: 85px;
+  right: 105px;
+  z-index: 2;
+  text-align: center;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  section.contact .contact-box {
+    bottom: 90px;
+    right: 30px;
   }
 }
 
