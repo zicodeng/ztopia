@@ -368,7 +368,7 @@ footer.site-footer.active {
 }
 footer.site-footer li {
   display: inline-block;
-  margin: 0 5px 20px;
+  margin: 0 5px 10px;
 }
 footer.site-footer li a {
   color: white;

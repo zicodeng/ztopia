@@ -280,7 +280,7 @@ get_sidebar();
 				// Verify we're running Jetpack
 				if ( function_exists( 'stats_get_csv' ) ) {
 					// Do API call
-					$response = stats_get_csv( 'postviews', 'post_id='. absint( $post_id ) .'&period=month&limit=1' );
+					$response = stats_get_csv( 'postviews', 'post_id='. absint( $post_id ) .'&limit=-1' );
 					// Set total count
 					$count = absint( $response[0]['views'] );
 					// If not, stop and don't set transient
