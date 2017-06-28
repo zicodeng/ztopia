@@ -275,22 +275,22 @@ get_sidebar();
 		<span>
 		<?php
 		function total_page_view_count( $post_id ) {
-			// Check for transient
-			if ( ! ( $count = get_transient( 'wds_post_pageview_count' . $post_id ) ) ) {
-				// Verify we're running Jetpack
-				if ( function_exists( 'stats_get_csv' ) ) {
-					// Do API call
-					$response = stats_get_csv( 'postviews', 'post_id='. absint( $post_id ) .'&limit=-1' );
-					// Set total count
-					$count = absint( $response[0]['views'] );
-					// If not, stop and don't set transient
-				} else {
-					return 'Jetpack stats not active';
-				}
-				// Set transient to expire every 30 minutes
-				set_transient( 'wds_post_pageview_count' . absint( $post_id ), absint( $count ), 30 * MINUTE_IN_SECONDS );
+			// Verify we're running Jetpack
+			if ( function_exists( 'stats_get_csv' ) ) {
+				// -1 indicates infinity, so get can get total views for all days
+				$args = array(
+				    'days'    => -1,
+				    'limit'   => -1,
+				    'post_id' => $post_id
+				);
+				// Do API call
+				$response = stats_get_csv( 'postviews', $args );
+				// Set total count
+				$count = absint( $response[0]['views'] );
+				return $count;
+			} else {
+				return 0;
 			}
-			return absint( $count );
 		}
 		$front_page_id = get_option( 'page_on_front' );
 		echo total_page_view_count( $front_page_id );
