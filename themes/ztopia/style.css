@@ -379,7 +379,7 @@ footer.site-footer li a:hover {
 footer.site-footer li a i {
   font-size: 30px;
 }
-footer.site-footer p span::before {
+footer.site-footer .created-by span::before {
   content: "\f004";
   font-family: FontAwesome;
   font-style: normal;
@@ -464,7 +464,7 @@ aside.sidebar.active {
   left: -300px;
 }
 .blog-info-container > h1 .last-name::after {
-  content: '"I aim to save people from the overwhelming tsunami of information"';
+  content: '"I aim to save people from the overwhelming tsunami of information."';
   width: 800px;
   font-size: 18px;
   font-weight: normal;

@@ -244,7 +244,7 @@ get_sidebar();
 		<div class="wrapper">
 			<div class="content">
 				<h4>Life Motto</h4>
-				<p>"I aim to save people from the overwhelming tsunami of information" - Zico Deng</p>
+				<p>"I aim to save people from the overwhelming tsunami of information." - Zico Deng</p>
 			</div>
 			<div class="featured-image"></div>
 		</div>
@@ -271,7 +271,32 @@ get_sidebar();
 		}
 		?>
 	</ul>
-    <p>Created with <span></span> by Zico Deng</p>
+	<p>Total page view:
+		<span>
+		<?php
+		function total_page_view_count( $post_id ) {
+			// Check for transient
+			if ( ! ( $count = get_transient( 'wds_post_pageview_count' . $post_id ) ) ) {
+				// Verify we're running Jetpack
+				if ( function_exists( 'stats_get_csv' ) ) {
+					// Do API call
+					$response = stats_get_csv( 'postviews', 'post_id='. absint( $post_id ) .'&period=month&limit=1' );
+					// Set total count
+					$count = absint( $response[0]['views'] );
+					// If not, stop and don't set transient
+				} else {
+					return 'Jetpack stats not active';
+				}
+				// Set transient to expire every 30 minutes
+				set_transient( 'wds_post_pageview_count' . absint( $post_id ), absint( $count ), 30 * MINUTE_IN_SECONDS );
+			}
+			return absint( $count );
+		}
+		echo total_page_view_count( $post_id );
+		?>
+		</span>
+	</p>
+    <p class="created-by">Created with <span></span> by Zico Deng</p>
 </footer>
 
 <?php
