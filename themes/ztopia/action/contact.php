@@ -5,20 +5,12 @@ $email = strip_tags( $_POST['email'] );
 $message = strip_tags( $_POST['message'] );
 
 $to = 'zicodeng@gmail.com';
-$subject = 'Contact From www.zicodeng.me';
+$subject = 'zicodeng.me: Message From ' . $name;
 $headers = 'From: ' . $email;
 
 if ( mail( $to, $subject, $message, $headers ) ) {
-	?>
-	<script type="text/javascript">
-		window.location = "http://www.zicodeng.me/thank-you";
-	</script>
-	<?php
+	header("Location: http://www.zicodeng.me/thank-you");
 } else {
-	?>
-	<script type="text/javascript">
-		window.location = "http://www.zicodeng.me";
-	</script>
-	<?php
+	header("Location: http://www.zicodeng.me/thank-you");
 }
 ?>
