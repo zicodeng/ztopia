@@ -9,7 +9,7 @@ section.contact {
 		position: fixed;
 		bottom: 50px;
 		right: 50px;
-		z-index: 1;
+		z-index: 2;
 		@include respond-to($screen-sm) {
 			bottom: 30px;
 			right: 30px;
