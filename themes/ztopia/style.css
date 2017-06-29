@@ -1404,7 +1404,11 @@ main.thank-you {
   background-color: black;
   text-align: center;
   color: white;
-  padding: 250px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
 }
 main.thank-you > h1 {
   font-size: 130px;
@@ -1418,4 +1422,106 @@ main.thank-you > h1 {
   main.thank-you > h1 {
     font-size: 55px;
   }
+}
+main.thank-you > a {
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 20px 40px;
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+main.thank-you > a:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-8px);
+    background-position: 0 25px;
+  }
+  50% {
+    transform: translateY(8px);
+    background-position: 0 -25px;
+  }
+  75% {
+    transform: translateY(0);
+    background-position: 0 0px;
+  }
+  100% {
+    transform: translateY(-8px);
+    background-position: 0 25px;
+  }
+}
+@keyframes shadow {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.page-404 {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-404 > h1 {
+  color: white;
+  font-size: 200px;
+  text-align: center;
+  line-height: 100%;
+  animation: updown 2s linear infinite;
+}
+@media screen and (max-width: 767px) {
+  .page-404 > h1 {
+    font-size: 150px;
+  }
+}
+.page-404 > .shadow {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 25px;
+  background-color: white;
+  margin: 10px auto;
+  border-radius: 50%;
+  animation: shadow 2s linear infinite;
+}
+@media screen and (max-width: 992px) {
+  .page-404 > .shadow {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-404 > .shadow {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-404 > .shadow {
+    width: 55%;
+  }
+}
+.page-404 > a {
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 20px 40px;
+  margin-top: 60px;
+  transition: all 0.3s ease-in-out;
+}
+.page-404 > a:hover {
+  background-color: white;
+  color: black;
 }

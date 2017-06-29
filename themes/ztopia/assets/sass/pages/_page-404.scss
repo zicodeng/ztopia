@@ -1,0 +1,93 @@
+@keyframes updown {
+    0% {
+      transform: translateY(-8px);
+      background-position: 0 25px;
+    }
+
+    50% {
+      transform: translateY(8px);
+      background-position: 0 -25px;
+    }
+
+    75% {
+      transform: translateY(0);
+      background-position: 0 0px;
+    }
+
+    100% {
+      transform: translateY(-8px);
+      background-position: 0 25px;
+    }
+}
+
+@keyframes shadow {
+    0% {
+      transform: scale(0.8);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    75% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0.8);
+    }
+}
+
+.page-404 {
+	background-color: $primary-color;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	> h1 {
+		color: white;
+		font-size: 200px;
+		text-align: center;
+		line-height: 100%;
+		animation: updown 2s linear infinite;
+		@include respond-to($screen-sm) {
+			font-size: 150px;
+		};
+	}
+
+	> .shadow {
+	    content: "";
+	    display: block;
+	    width: 20%;
+	    height: 25px;
+	    background-color: white;
+	    margin: 10px auto;
+	    border-radius: 50%;
+	    animation: shadow 2s linear infinite;
+		@include respond-to($screen-md) {
+			width: 40%;
+		};
+		@include respond-to($screen-sm) {
+			width: 35%;
+		};
+		@include respond-to($screen-xs) {
+			width: 55%;
+		};
+	}
+
+	> a {
+		color: white;
+		display: inline-block;
+		border: 1px solid white;
+		padding: $spacing-md $spacing-lg;
+		margin-top: 60px;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+}
