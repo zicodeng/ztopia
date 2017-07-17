@@ -50,6 +50,13 @@ var map;
 		$(".contact-widget").click(function() {
 			$(".contact-box").slideToggle(500);
 		});
+
+		// Project isotope
+		$(".grid").isotope({
+			// options
+			itemSelector: ".grid-item",
+			layoutMode: "fitRows"
+		});
 	}); // document.ready() callback end
 
 	// This function adds indicator on menu item,

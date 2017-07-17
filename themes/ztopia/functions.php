@@ -8,18 +8,24 @@ function ztopia_resources() {
 	// P3: an array of dependencies
 	// P4: version number
 	// P5: Where do you want to load the script? true = load this script in footer
+	// Only load these files in front-page.php
 	if ( is_front_page() ) {
-		// Only load these files in front-page.php
 		wp_enqueue_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC_FtTqKXIsU2cykmp5aoVogtQpz_plq1Q' );
 		wp_enqueue_script( 'app', get_template_directory_uri() . '/assets/dist/app.js', array(), 1.0, true );
 		wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/src/main.js', array('jquery'), 1.0, true );
 	}
 
+	// Only load these files in single-project.php
 	if ( is_singular('project') ) {
-		// Only load these files in single-project.php
 		wp_enqueue_script( 'single-project', get_template_directory_uri() . '/assets/src/single-project.js', array('jquery'), 1.0, true );
 		wp_enqueue_script( 'full-page-scrolling-script', get_template_directory_uri() . '/assets/src/jquery.fullpage.extensions.min.js', array('jquery'), 1.0, true );
 		wp_enqueue_style( 'full-page-scrolling-style', get_template_directory_uri() . '/assets/src/jquery.fullpage.css', array(), '1', 'all' );
+	}
+
+	// Only load these files in single-photograph.php
+	if ( is_singular('photograph') ) {
+		// Isotope
+		wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/src/isotope.pkgd.min.js', array(), 1.0, true );
 	}
 
 	// Styles
@@ -56,17 +62,17 @@ add_theme_support( 'post-thumbnails' );
 // Customize dashboard menu
 function remove_menus(){
 
-  // remove_menu_page( 'index.php' );                  //Dashboard
-  // remove_menu_page( 'jetpack' );                    //Jetpack*
-  remove_menu_page( 'edit.php' );                   //Posts
-  // remove_menu_page('upload.php');                 //Media
-  // remove_menu_page( 'edit.php?post_type=page' );    //Pages
-  remove_menu_page( 'edit-comments.php' );          //Comments
-  // remove_menu_page( 'themes.php' );                 //Appearance
-  // remove_menu_page( 'plugins.php' );                //Plugins
-  // remove_menu_page( 'users.php' );                  //Users
-  remove_menu_page( 'tools.php' );                  //Tools
-  // remove_menu_page( 'options-general.php' );        //Settings
+	// remove_menu_page( 'index.php' );                  //Dashboard
+	// remove_menu_page( 'jetpack' );                    //Jetpack*
+	remove_menu_page( 'edit.php' );                   //Posts
+	// remove_menu_page('upload.php');                 //Media
+	// remove_menu_page( 'edit.php?post_type=page' );    //Pages
+	remove_menu_page( 'edit-comments.php' );          //Comments
+	// remove_menu_page( 'themes.php' );                 //Appearance
+	// remove_menu_page( 'plugins.php' );                //Plugins
+	// remove_menu_page( 'users.php' );                  //Users
+	remove_menu_page( 'tools.php' );                  //Tools
+	// remove_menu_page( 'options-general.php' );        //Settings
 }
 
 add_action( 'admin_menu', 'remove_menus' );
