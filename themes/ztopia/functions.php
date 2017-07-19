@@ -17,15 +17,24 @@ function ztopia_resources() {
 
 	// Only load these files in single-project.php
 	if ( is_singular('project') ) {
-		wp_enqueue_script( 'single-project', get_template_directory_uri() . '/assets/src/single-project.js', array('jquery'), 1.0, true );
+
+		// Fullpage plugin script
 		wp_enqueue_script( 'full-page-scrolling-script', get_template_directory_uri() . '/assets/src/jquery.fullpage.extensions.min.js', array('jquery'), 1.0, true );
+
+		// Fullpage plugin style
 		wp_enqueue_style( 'full-page-scrolling-style', get_template_directory_uri() . '/assets/src/jquery.fullpage.css', array(), '1', 'all' );
 	}
 
-	// Only load these files in single-photograph.php
-	if ( is_singular('photograph') ) {
+	// Only load these files in page-photo-gallery.php
+	if ( is_page('photo-gallery') ) {
 		// Isotope
 		wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/src/isotope.pkgd.min.js', array(), 1.0, true );
+
+		// jsPDF
+		wp_enqueue_script( 'jsPDF', get_template_directory_uri() . '/assets/src/jspdf.min.js', array(), 1.0, true );
+
+		// Page-specific JavaScript
+		wp_enqueue_script( 'gallery', get_template_directory_uri() . '/assets/src/photo-gallery.js', array('jquery'), 1.0, true );
 	}
 
 	// Styles

@@ -24,7 +24,11 @@
 				$urlSplit = explode("/", $originalUrl);
 				$newUrl = $urlSplit[count($urlSplit) - 2];
 
-				echo "<li><a href='#$newUrl'>$title</a></li>";
+				if ( $title == 'Photo Gallery' )  {
+					echo "<li><a href='$newUrl' target='_blank'>$title</a></li>";
+				} else {
+					echo "<li><a href='#$newUrl'>$title</a></li>";
+				}
 			}
 			echo "</ul>";
 		}

@@ -50,28 +50,26 @@ var map;
 		$(".contact-widget").click(function() {
 			$(".contact-box").slideToggle(500);
 		});
-
-		// Project isotope
-		$(".grid").isotope({
-			// options
-			itemSelector: ".grid-item",
-			layoutMode: "fitRows"
-		});
 	}); // document.ready() callback end
 
 	// This function adds indicator on menu item,
 	// which allows the user to know which section they are currently in
 	function onScroll() {
 		var scrollPosition = $(document).scrollTop();
-		$("nav.site-nav ul li a").each(function () {
+		$("nav.site-nav ul li a").each(function() {
 			var currentLink = $(this);
 			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top - 200 <= scrollPosition &&
-			refElement.position().top + refElement.height() > scrollPosition) {
-				$("nav.site-nav ul li a").removeClass("active");
-				currentLink.addClass("active");
-			} else {
-				currentLink.removeClass("active");
+
+			// Check if the link is internal link (e.g.#link)
+			// We are not interested in external link
+			if (refElement.selector.startsWith("#")) {
+				if (refElement.position().top - 200 <= scrollPosition &&
+				refElement.position().top + refElement.height() > scrollPosition) {
+					$("nav.site-nav ul li a").removeClass("active");
+					currentLink.addClass("active");
+				} else {
+					currentLink.removeClass("active");
+				}
 			}
 		});
 	}

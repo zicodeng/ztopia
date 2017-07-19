@@ -1,0 +1,106 @@
+section.landing {
+	height: 100vh;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-attachment: fixed;
+	@include bg-img("./assets/images/rose.jpg");
+
+	> div {
+		color: white;
+		text-align: center;
+		padding: 100px;
+		background-color: rgba(0, 0, 0, 0.6);
+		@include respond-to($screen-xs) {
+			padding: 50px;
+		};
+
+		h1 {
+			margin-bottom: $spacing-md;
+		}
+	}
+}
+
+section.gallery {
+	height: auto;
+	background-color: black;
+	padding: $spacing-xl 0;
+
+	.btn-group {
+		color: white;
+		text-align: center;
+		margin-bottom: $spacing-lg;
+		display: block;
+		> span {
+			padding: $spacing-sm;
+			cursor: pointer;
+
+			&:hover, &.active {
+				color: $accent-color;
+			}
+		}
+	}
+
+	article {
+		padding: 15px;
+		cursor: pointer;
+
+		&.saved {
+			.photo-preview {
+				.banner {
+					bottom: 0;
+
+					.love-btn {
+						color: #ED1C24;
+					}
+				}
+			}
+		}
+
+		.photo-preview {
+			height: 250px;
+			border: 5px solid white;
+			position: relative;
+			overflow: hidden;
+			@include bg-img();
+
+			&:hover {
+				.banner {
+					bottom: 0;
+				}
+			}
+
+			.banner {
+				width: 100%;
+				color: white;
+				padding: 10px 15px;
+				background-color: rgba(0, 0, 0, 0.6);
+				transition: all 0.3s ease-in-out;
+				@include abs-pos(auto, auto, -50px);
+
+				.love-btn {
+					float: right;
+				}
+			}
+		}
+	}
+
+	.download-btn {
+		margin: $spacing-lg auto 0;
+		padding: $spacing-md $spacing-lg;
+		display: block;
+		color: white;
+		background-color: black;
+		border: 1px solid white;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		display: none;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+}
