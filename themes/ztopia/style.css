@@ -270,6 +270,7 @@ button:focus {
   box-shadow: none;
   -webkit-appearance: none;
   outline: none;
+  font-family: "roboto", sans-serif;
 }
 
 nav.site-nav {
@@ -1522,6 +1523,106 @@ main.thank-you > a:hover {
   transition: all 0.3s ease-in-out;
 }
 .page-404 > a:hover {
+  background-color: white;
+  color: black;
+}
+
+section.landing {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-image: url("./assets/images/rose.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.landing > div {
+  color: white;
+  text-align: center;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width: 480px) {
+  section.landing > div {
+    padding: 50px;
+  }
+}
+section.landing > div h1 {
+  margin-bottom: 20px;
+}
+
+section.gallery {
+  height: auto;
+  background-color: black;
+  padding: 80px 0;
+}
+section.gallery .btn-group {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  display: block;
+}
+section.gallery .btn-group > span {
+  padding: 10px;
+  cursor: pointer;
+}
+section.gallery .btn-group > span:hover, section.gallery .btn-group > span.active {
+  color: #0082E5;
+}
+section.gallery article {
+  padding: 15px;
+  cursor: pointer;
+}
+section.gallery article.saved .photo-preview .banner {
+  bottom: 0;
+}
+section.gallery article.saved .photo-preview .banner .love-btn {
+  color: #ED1C24;
+}
+section.gallery article .photo-preview {
+  height: 250px;
+  border: 5px solid white;
+  position: relative;
+  overflow: hidden;
+  background-image: url(none);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.gallery article .photo-preview:hover .banner {
+  bottom: 0;
+}
+section.gallery article .photo-preview .banner {
+  width: 100%;
+  color: white;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -50px;
+  left: auto;
+}
+section.gallery article .photo-preview .banner .love-btn {
+  float: right;
+}
+section.gallery .download-btn {
+  margin: 40px auto 0;
+  padding: 20px 40px;
+  display: block;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+section.gallery .download-btn:hover {
   background-color: white;
   color: black;
 }

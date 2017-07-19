@@ -4,12 +4,12 @@ var path = require("path");
 var config = {
 	context: __dirname,
     entry: {
-		app: "./assets/src/app.jsx",
+		app: "./assets/src/app.jsx"
 	},
 
     output: {
         path: path.join(__dirname, "/assets/dist"),
-        filename: "app.js"
+        filename: "[name].js"
     },
 
 	watch: true,
