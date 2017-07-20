@@ -44,6 +44,55 @@ get_header();
 			<button class="download-btn" type="button" name="download_btn">DOWNLOAD</button>
 		</div>
 	</section>
+	<footer class="site-footer photo-gallery-footer">
+		<ul>
+			<?php
+			$user = get_user_by( 'email', 'zicodeng@gmail.com' );
+			$userID = $user->ID;
+			$userLinkedIn = get_user_meta( $userID, 'linkedin', true);
+			if ( strlen( $userLinkedIn ) ) {
+			?>
+				<li><a href="<?php echo $userLinkedIn; ?>" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+			<?php
+			}
+			?>
+			<?php
+			$userGitHub = get_user_meta( $userID, 'github', true);
+			if ( strlen( $userGitHub ) ) {
+			?>
+				<li><a href="<?php echo $userGitHub; ?>" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+			<?php
+			}
+			?>
+		</ul>
+		<p class="total-page-view">Total page view:
+			<span>
+			<?php
+			function total_page_view_count( $post_id ) {
+				// Verify we're running Jetpack
+				if ( function_exists( 'stats_get_csv' ) ) {
+					// -1 indicates infinity, so get can get total views for all days
+					$args = array(
+					    'days'    => -1,
+					    'limit'   => -1,
+					    'post_id' => $post_id
+					);
+					// Do API call
+					$response = stats_get_csv( 'postviews', $args );
+					// Set total count
+					$count = absint( $response[0]['views'] );
+					return $count;
+				} else {
+					return 0;
+				}
+			}
+			$front_page_id = get_option( 'page_on_front' );
+			echo total_page_view_count( $front_page_id );
+			?>
+			</span>
+		</p>
+	    <p class="created-by">Created with <span></span> by Zico Deng</p>
+	</footer>
 </main>
 
 <?php
