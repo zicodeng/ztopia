@@ -14,7 +14,7 @@ get_header();
 		<div class="container">
 			<h4 class="btn-group">
 				<span class="all-btn active" data-filter="*">ALL</span>
-				<span class="saved-btn" data-filter=".saved">SAVED</span>
+				<span class="saved-btn" data-filter=".saved">SAVED(0)</span>
 			</h4>
 			<div class="row grid">
 				<?php
