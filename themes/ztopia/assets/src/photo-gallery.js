@@ -63,6 +63,10 @@
 					filter: ".saved"
 				});
 			}
+
+			// Update saved button view to indicate
+			// the number of saved item in the saved list
+			savedBtn.html("SAVED(" + savedList.length + ")");
 		});
 
 		// Handle download as PDF
