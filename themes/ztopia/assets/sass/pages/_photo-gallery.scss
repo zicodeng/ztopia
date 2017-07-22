@@ -1,3 +1,44 @@
+main.photo-gallery {
+	.overlay {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		background-color: $accent-color;
+		opacity: 0.6;
+		z-index: 1;
+		display: none;
+	}
+
+	.photo-full-view-container {
+		position: fixed;
+		z-index: 2;
+		display: none;
+		left: 50%;
+		top: 50%;
+		text-align: center;
+		color: white;
+		@include transform(translate(-50%, -50%));
+
+		> img {
+			border: 5px solid white;
+		}
+
+		> .photo-title {
+			text-transform: none;
+			margin: $spacing-md 0;
+		}
+
+		> i {
+			font-size: 30px;
+			cursor: pointer;
+
+			&:hover {
+				color: #ED1C24;
+			}
+		}
+	}
+}
+
 section.landing {
 	height: 100vh;
 	padding: 50px;
@@ -43,12 +84,11 @@ section.gallery {
 		}
 	}
 
-	article {
+	article.element-item {
 		padding: 15px;
-		cursor: pointer;
 
 		&.saved {
-			.photo-preview {
+			.photo-preview-container {
 				.banner {
 					bottom: 0;
 
@@ -59,17 +99,24 @@ section.gallery {
 			}
 		}
 
-		.photo-preview {
+		.photo-preview-container {
 			height: 250px;
-			border: 5px solid white;
 			position: relative;
 			overflow: hidden;
-			@include bg-img();
+			border: 5px solid white;
 
 			&:hover {
 				.banner {
 					bottom: 0;
 				}
+			}
+
+			.photo-preview {
+				height: 100%;
+				position: relative;
+				overflow: hidden;
+				cursor: pointer;
+				@include bg-img();
 			}
 
 			.banner {
@@ -78,10 +125,15 @@ section.gallery {
 				padding: 10px 15px;
 				background-color: rgba(0, 0, 0, 0.6);
 				transition: all 0.3s ease-in-out;
-				@include abs-pos(auto, auto, -50px);
+				@include abs-pos(auto, auto, -40px);
 
 				.love-btn {
 					float: right;
+					cursor: pointer;
+
+					&:hover {
+						color: #ED1C24;
+					}
 				}
 			}
 		}

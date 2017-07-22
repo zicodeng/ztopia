@@ -28,17 +28,20 @@
 			handleClickFilter(grid, self);
 		});
 
-		// Save/unsave favorite photograph
+		var loveBtn = $(".love-btn")
 		var elementItem = $(".element-item");
+		var $photoPreview = $(".photo-preview")
+		var $previewBanner = $(".banner");
 		var savedList = [];
 
-		elementItem.click(function() {
-			$(this).toggleClass("saved");
+		// Save/unsave favorite photograph
+		loveBtn.click(function() {
+			$(this).closest(elementItem).toggleClass("saved");
 
 			// Get image and title of saved item
-			var savedImgURL = $(this).children(".photo-preview").css("background-image").replace('url(','').replace(')','').replace(/\"/gi, "");
+			var savedImgURL = $(this).closest($previewBanner).siblings($photoPreview).css("background-image").replace('url(','').replace(')','').replace(/\"/gi, "");
 
-			var savedImgTitle = $(this).find(".photo-title").html();
+			var savedImgTitle = $(this).siblings(".photo-title").html();
 
 			var savedItem = {
 				savedImgURL: savedImgURL,
@@ -46,7 +49,7 @@
 			}
 
 			// Check if this click action is for saving or removing
-			if ($(this).hasClass("saved")) {
+			if ($(this).closest(elementItem).hasClass("saved")) {
 				// Push it to saved list
 				savedList.push(savedItem);
 			} else {
@@ -67,6 +70,32 @@
 			// Update saved button view to indicate
 			// the number of saved item in the saved list
 			savedBtn.html("SAVED(" + savedList.length + ")");
+		});
+
+		var $photoFullViewContainer = $(".photo-full-view-container");
+		var $overlay = $(".overlay");
+		var $photoFullViewTitle = $(".photo-full-view-container > .photo-title");
+
+		// Click the photo to view full image
+		$photoPreview.click(function() {
+
+			// Get selected image URL
+			var imgURL = $(this).css("background-image").replace('url(','').replace(')','').replace(/\"/gi, "");
+			// Get selected image title
+			var photoTitle = $(this).siblings($previewBanner).find(".photo-title").html();
+
+			// Display it in the full image container
+			$overlay.show();
+			$photoFullViewContainer.show();
+			$photoFullViewContainer.children("img").attr("src", imgURL);
+			$photoFullViewTitle.html(photoTitle);
+		});
+
+		var $closeBtn = $(".close-btn");
+
+		$closeBtn.click(function() {
+			$overlay.hide();
+			$photoFullViewContainer.hide();
 		});
 
 		// Handle download as PDF

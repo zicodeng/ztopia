@@ -4,6 +4,12 @@ get_header();
 ?>
 
 <main class="photo-gallery">
+	<div class="overlay"></div>
+	<div class="photo-full-view-container">
+		<img class="" src="" alt="">
+		<h4 class="photo-title"></h4>
+		<i class="fa fa-times-circle-o close-btn" aria-hidden="true"></i>
+	</div>
 	<section class="landing">
 		<div>
 			<h1>Photo Gallery</h1>
@@ -29,7 +35,8 @@ get_header();
 						$photograph_posts->the_post();
 						?>
 						<article class="col-sm-12 col-md-6 col-lg-3 element-item">
-							<div class="photo-preview" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+							<div class="photo-preview-container">
+								<div class="photo-preview" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>
 								<div class="banner">
 									<span class="photo-title"><?php the_title(); ?></span>
 									<span class="love-btn"><i class="fa fa-heart" aria-hidden="true"></i></span>

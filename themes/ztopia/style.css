@@ -1532,6 +1532,43 @@ main.thank-you > a:hover {
   color: black;
 }
 
+main.photo-gallery .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #0082E5;
+  opacity: 0.6;
+  z-index: 1;
+  display: none;
+}
+main.photo-gallery .photo-full-view-container {
+  position: fixed;
+  z-index: 2;
+  display: none;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  color: white;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+main.photo-gallery .photo-full-view-container > img {
+  border: 5px solid white;
+}
+main.photo-gallery .photo-full-view-container > .photo-title {
+  text-transform: none;
+  margin: 20px 0;
+}
+main.photo-gallery .photo-full-view-container > i {
+  font-size: 30px;
+  cursor: pointer;
+}
+main.photo-gallery .photo-full-view-container > i:hover {
+  color: #ED1C24;
+}
+
 section.landing {
   height: 100vh;
   padding: 50px;
@@ -1578,30 +1615,35 @@ section.gallery .btn-group > span {
 section.gallery .btn-group > span:hover, section.gallery .btn-group > span.active {
   color: #0082E5;
 }
-section.gallery article {
+section.gallery article.element-item {
   padding: 15px;
-  cursor: pointer;
 }
-section.gallery article.saved .photo-preview .banner {
+section.gallery article.element-item.saved .photo-preview-container .banner {
   bottom: 0;
 }
-section.gallery article.saved .photo-preview .banner .love-btn {
+section.gallery article.element-item.saved .photo-preview-container .banner .love-btn {
   color: #ED1C24;
 }
-section.gallery article .photo-preview {
+section.gallery article.element-item .photo-preview-container {
   height: 250px;
-  border: 5px solid white;
   position: relative;
   overflow: hidden;
+  border: 5px solid white;
+}
+section.gallery article.element-item .photo-preview-container:hover .banner {
+  bottom: 0;
+}
+section.gallery article.element-item .photo-preview-container .photo-preview {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
   background-image: url(none);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section.gallery article .photo-preview:hover .banner {
-  bottom: 0;
-}
-section.gallery article .photo-preview .banner {
+section.gallery article.element-item .photo-preview-container .banner {
   width: 100%;
   color: white;
   padding: 10px 15px;
@@ -1610,11 +1652,15 @@ section.gallery article .photo-preview .banner {
   position: absolute;
   top: auto;
   right: auto;
-  bottom: -50px;
+  bottom: -40px;
   left: auto;
 }
-section.gallery article .photo-preview .banner .love-btn {
+section.gallery article.element-item .photo-preview-container .banner .love-btn {
   float: right;
+  cursor: pointer;
+}
+section.gallery article.element-item .photo-preview-container .banner .love-btn:hover {
+  color: #ED1C24;
 }
 section.gallery .download-btn {
   margin: 40px auto 0;
