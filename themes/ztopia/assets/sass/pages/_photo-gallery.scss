@@ -3,8 +3,8 @@ main.photo-gallery {
 		width: 100vw;
 		height: 100vh;
 		position: fixed;
-		background-color: $accent-color;
-		opacity: 0.6;
+		background-color: $primary-color;
+		opacity: 0.8;
 		z-index: 1;
 		display: none;
 	}
@@ -21,6 +21,7 @@ main.photo-gallery {
 
 		> img {
 			border: 5px solid white;
+			max-height: 550px;
 		}
 
 		> .photo-title {
